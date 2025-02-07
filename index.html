@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon - Your Comany Name</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #4A90E2, #9013FE);
+            color: white;
+            text-align: center;
+        }
+
+        .logo {
+            max-width: 400px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin: 10px 0 30px;
+        }
+
+        .countdown {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        .email-form {
+            margin-top: 20px;
+        }
+
+        .input {
+            padding: 10px;
+            font-size: 1em;
+            border: none;
+            border-radius: 5px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+
+        .subscribe-btn {
+            padding: 10px 20px;
+            font-size: 1em;
+            border: none;
+            border-radius: 5px;
+            background: #ff9800;
+            color: white;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .subscribe-btn:hover {
+            background: #e68900;
+        }
+
+        footer {
+            position: absolute;
+            bottom: 10px;
+            font-size: 0.9em;
+        }
+
+        footer a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <img src="/img/testlogo.png" alt="Your Company Logo" class="logo">
+    <h1>Website Coming Soon</h1>
+    <h2>Something Big is Coming Soon!</h2>
+    <p>We are working hard to launch our new website.</p>
+
+    <div class="countdown">Stay tuned for updates!</div>
+
+    <form class="email-form" action="send_csv_local.php" method="POST">
+        <input type="text" class="input" name="name" placeholder="Enter your name" required>
+        <input type="email" class="input" name="email" placeholder="Enter your email" required>
+        <button type="submit" class="subscribe-btn">Notify Me</button>
+    </form>
+
+    <footer>
+        &copy; <script>document.write(new Date().getFullYear())</script> Your Comany Name. All Rights Reserved. | Powered by <a href="https://globaladsmedia.us">Global Web Dev</a>
+    </footer>
+</body>
+</html>
