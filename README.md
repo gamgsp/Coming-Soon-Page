@@ -51,28 +51,28 @@ The `index.html` file includes a form that submits data to a PHP script. You can
 ### Example:
 
 ```html
-<form action="save_csv_local.php" method="post">
+<form class="email-form" action="save_csv_local.php" method="post">
     <!-- form fields -->
 </form>
 ```
 
 Send via PHP email:
 ```html
-<form action="send_php_email.php" method="post">
+<form class="email-form" action="send_php_email.php" method="post">
     <!-- form fields -->
 </form>
 ```
 
 Send via SMTP email:
 ```html
-<form action="send_smtp_mail.php" method="post">
+<form class="email-form" action="send_smtp_mail.php" method="post">
     <!-- form fields -->
 </form>
 ```
 
 Send to Google Sheets:
 ```html
-<form action="send_to_google_sheets.php" method="post">
+<form class="email-form" action="send_to_google_sheets.php" method="post">
     <!-- form fields -->
 </form>
 ```
