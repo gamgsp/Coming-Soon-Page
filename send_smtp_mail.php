@@ -17,7 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     // Email details
     $to = "info@globaladsmedia.us"; // Replace with your email address
     $subject = "New Subscription Request";
-    $message = "You have a new subscriber: " . $email;
+    $message = htmlspecialchars("You have a new subscriber: " . $email, ENT_QUOTES, 'UTF-8');
 
     // Initialize PHPMailer
     $mail = new PHPMailer(true);
