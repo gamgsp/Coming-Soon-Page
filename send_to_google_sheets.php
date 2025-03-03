@@ -38,7 +38,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         );
         echo "Thank you for subscribing!";
     } catch (Exception $e) {
-        echo "Error: " . $e->getMessage();
+        // Log the exception details
+        error_log("Error: " . $e->getMessage());
+        echo "Failed to process your request. Please try again later.";
     }
 } else {
     echo "Invalid request method.";
