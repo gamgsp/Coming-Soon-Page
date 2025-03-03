@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     }
 
     // Email details
-    $to = "info@globaladsmedia.us"; // Replace with your email address
+    $to = "your@email.com"; // Replace with your email address
     $subject = "New Subscription Request";
     $message = htmlspecialchars("You have a new subscriber: " . $email, ENT_QUOTES, 'UTF-8');
 
@@ -45,7 +45,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $mail->send();
         echo "Thank you for subscribing!";
     } catch (Exception $e) {
-        echo "Failed to send your subscription. Please try again later. Mailer Error: {$mail->ErrorInfo}";
+        // Log the exception details
+        error_log("Mailer Error: " . $mail->ErrorInfo);
+        echo "Failed to send your subscription. Please try again later.";
     }
 } else {
     echo "Invalid request method.";
